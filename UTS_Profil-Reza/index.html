@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Adi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <script>
+    function tampil(menu) {
+      var judul = document.getElementById('judul');
+      var isi = document.getElementById('isi');
+
+      if (menu == 'biodata') {
+        judul.innerText = 'Biodata';
+        isi.innerText = 'Nama: Reza Adi Pratama\n' +
+                        'NIM: 2025081047\n' +
+                        'Program Studi: Sistem Informasi\n' +
+                        'Semester: 3\n' +
+                        'Tempat, Tanggal Lahir: Cirebon, 4 Februari 2007\n' +
+                        'Domisili: Tangerang Selatan\n';
+      } else if (menu == 'pendidikan') {
+        judul.innerText = 'Pendidikan';
+        isi.innerText = 'SD: SDN Benhil 05 Pagi\n' +
+                        'SMP: SMPIT Said Naum\n' +
+                        'SMA/SMK: SMAI Said Naum\n' +
+                        'Kuliah: Universitas Pembangunan Jaya\n';
+      } else if (menu == 'pengalaman') {
+        judul.innerText = 'Pengalaman';
+        isi.innerText = '1. Menjadi Presenter di Seminar SEMBADHA PKN STAN\n' +
+                        '2. Menjadi Pemateri di SMK Fadillah\n';
+      } else if (menu == 'keahlian') {
+        judul.innerText = 'Keahlian';
+        isi.innerText = '1. HTML Dasar\n' +
+                        '2. CSS Dasar\n' +
+                        '3. JavaScript Dasar';
+      } else if (menu == 'pelatihan') {
+        judul.innerText = 'Pelatihan';
+        isi.innerText = '1. Pelatihan Literasi AI\n' +
+                        '2. Seminar SEMBADHA PKN STAN\n' ;
+      }
+    }
+  </script>
+
+  <header>
+    <img src="foto.jpg" alt="Foto Profil">
+    <h1>Profil Adi</h1>
+  </header>
+
+  <main>
+    <nav>
+      <a href="#" onclick="tampil('biodata'); return false;">Biodata</a>
+      <a href="#" onclick="tampil('pendidikan'); return false;">Pendidikan</a>
+      <a href="#" onclick="tampil('pengalaman'); return false;">Pengalaman</a>
+      <a href="#" onclick="tampil('keahlian'); return false;">Keahlian</a>
+      <a href="#" onclick="tampil('pelatihan'); return false;">Pelatihan</a>
+    </nav>
+
+    <section>
+      <h2 id="judul">Biodata</h2>
+      <p id="isi">Nama: Reza Adi Pratama
+NIM: 2025081047
+Program Studi: Sistem Informasi
+Semester: 3
+Tempat, Tanggal Lahir: Cirebon, 4 Februari 2007
+Domisili: Tangerang Selatan</p>
+    </section>
+
+    <aside>
+      <h3>Hobi</h3>
+      <p>Fashion</p>
+      <p>Game</p>
+      <p>Jogging</p>
+      <p>Fitness</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Copyright 2026 - All Rights Reserved</p>
+    
+  </footer>
+
+</body>
+</html>
